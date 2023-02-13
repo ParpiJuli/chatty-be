@@ -6,8 +6,7 @@ const log: Logger = config.createLogger('server Database');
 
 export default () => {
   const connect = () => {
-    mongoose
-      .connect(`${config.DATABASE_URL}`)
+    mongoose.connect('mongodb://localhost:27017/chatty-backend')
       .then(() => {
         log.error('Successfully connected to database');
       })

@@ -1,0 +1,16 @@
+@baseUrl = http//localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/signup
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "username": "julieta",
+  "password": "123123123",
+  "email": "julieta@julieta.com",
+  "avatarColor": "",
+  "avatarImage": ""
+}
